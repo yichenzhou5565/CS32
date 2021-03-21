@@ -1,0 +1,4 @@
+This is a project focusing on HashTable. Actually, binary search tree may work as well, 
+but I choose hash table here for its easier search and higher speed. The goal is to 
+compress a 'new' file based on a similar old file by commands like "A: ", which stands 
+for add, and "C: ", which stands for copy.
