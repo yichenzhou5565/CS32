@@ -1,0 +1,20 @@
+This Project is Game Kala. The highlight of this project is that we have to make the 
+"smartPlayer (the computer player)" wins as much as they can. This is to say, we want 
+to 'predict' which move is the best as accurate as possible. Here is a more detailed 
+description: I used list and map as containers in this project. In the class Board, I 
+used list from STL library to store and trace the number of beans in the holes as well 
+as the pots. I made two lists of int’s, corresponding to the SOUTH and the NORTH side. 
+For each list, the 0 position correspond to the pot, and the position starting from one 
+has the same index with the hole’s number mentioned in the spec. For tracing and accessing 
+purposes, I used iterator (and const_iterator when necessary…) to trace the each list. I 
+defined two non-member functions in Side.h and gave implementations in main. I used map as 
+well, which will be described more in detail in the documentation for SmartPlayer::chooseMove. 
+The helper function generalMove basically does whatever the move() function in game should 
+do (i.e., one complete move). I defined this function as a non-member function just because 
+I want to use it in the SmartPlayer::chooseMove function to “make” the move, so that I can 
+trace down what will happen (what is the best path) if we “make” the move. The second helper 
+function is generalStatus, which basically does everything Game::status should do(determining 
+if the game is over, if there is a winner, who is the winner, if any). I defined this non-member 
+function because I want to decide the status of the game in SmartPlayer::chooseMove implementation 
+as well. Note that it will speed up the code if we already know one side will win before the game 
+is even officially over. For more detailed algorithm or pseudocode, please see report.
