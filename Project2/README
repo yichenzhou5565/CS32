@@ -1,0 +1,10 @@
+Project Description:
+This is a Linked List project. 
+Typical Sequence: 
+  A head pointer pointing at the first element of the sequence. 
+  A tail pointer pointing at the last element of the sequence. 
+  Each element of the sequence contains three things: 
+    data, which contains the data of ItemType; 
+    prev pointer, pointing to the previous element; 
+    next pointer, pointing to the next element in the sequence  
+Empty Sequence: Head and tail is nulltpr. Size is 0. 
